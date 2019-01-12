@@ -1,0 +1,217 @@
+/* Web Fonts */
+ 
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #878787;
+    margin: 0;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-header {
+    padding-top: 170px;
+    height: 670px;
+    background: linear-gradient(#ffa949, transparent 90%),
+                linear-gradient(0deg, #fff, transparent),
+    #ffa949 url('../img/main-header.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    font-size: 1.625rem;
+    letter-spacing: .65rem;
+    font-weight: 150;
+    border-bottom: 2px solid;
+
+
+}
+h1 {
+    font-size: 4.725rem;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+    margin: 12px 0 0;
+  
+}
+
+h2 {
+    font-size: 53px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: .5em;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+    line-height: 1.2;
+    margin-bottom: 1.7em;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/* Pseudo-classes---------------->*/
+a:link {
+    color: rgb(255, 169, 73);
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightblue;
+}
+a:hover {
+    color: rgb(255, 169, 73, .4)
+}
+a:active {
+    color: lightcoral;
+}
+.primary-content,
+.main-header,
+.main-footer {
+    text-align: center;
+}
+
+.primary-content {
+    padding-top: 25px;
+    padding-bottom: 95;
+}
+
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #ffa949;
+}
+
+/* Layout Styles----------------------------> */
+.primary-content, 
+.secondary-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+.wildlife {
+    color: white;
+    background-color: #434a52;
+    padding: 18% 24%;
+    border-top: 10px solid #ffa949;
+    /* margin-top: 105px;
+    margin-right: 0;
+    margin-bottom: 60px;
+    margin-left: 0; */
+    margin: 105px 0 60px;
+    background: #434a52 url('../img/bear.jpg') no-repeat center / cover;
+    box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 1);
+    
+    border-radius: 10px;
+}
+
+/* Floated Columns----------------------------> */
+.resorts,
+.tips {
+    width: 46.6%;
+}
+
+.tips {
+    float: right;
+}
+
+.resorts {
+    float: left;
+}
+/* Float Clearfix----------------------------> */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .primary-content,
+    .secondary-content {
+        width: 90%;
+    }
+
+    .wildlife {
+        padding: 10% 12%;
+        margin: 50 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+        padding: 20px;
+        border-top: none;
+    }
+
+    .main-footer {
+        max-height: 380px;
+        padding: 50px 25px 0;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        border: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .resorts,
+    .tips {
+        float: none;
+        width: 100%
+    }
+
+    .main-footer {
+        padding: 20px 0;
+    }
+}
